@@ -1,8 +1,7 @@
+//tim cac so nguyen to tu left den right 
 #include<iostream>
 #include<vector>
 using namespace std;
-
-
 
 vector<int> sang(int n) {
     bool s[n+5] = {};
