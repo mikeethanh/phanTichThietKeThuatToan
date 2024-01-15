@@ -1,4 +1,4 @@
-// ý tưởng thuật toán : loại bỏ các bội số của các số nguyên tố từ dang sách 
+// ý tưởng thuật toán : loại bỏ các bội số của các số nguyên tố từ danh sách 
 // số nguyên cho trước
 
 // áp dụng : 

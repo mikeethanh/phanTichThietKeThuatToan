@@ -1,3 +1,6 @@
+//Theo giả thuyết Goldbach mọi số tự nhiên lớn hơn 6 đều phân tích được thành tổng 3 số nguyên tố. Cho số tự nhiên n 
+//đếm số cách khác nhau phân tích n thành tổng của 3 số nguyên tố a, b, c 
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
