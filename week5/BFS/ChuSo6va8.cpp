@@ -13,8 +13,8 @@ int main() {
         cout << "0" <<endl;
         return 0;
     };
-    Q.push(8%n); M[8%n] = "8";
-    Q.push(6%n); M[6%n] = "6";
+    Q.push(6%n); M[8%n] = "8";
+    Q.push(8%n); M[6%n] = "6";
    
     while(Q.size() && M.find(0)== M.end()) {
         u = Q.front();
