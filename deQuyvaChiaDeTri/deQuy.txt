@@ -1,0 +1,50 @@
+1. đệ quy
+đệ quy la cach xây dựng chính sử dụng bản thân nó như 1 phâng trong công trình của nó
+- hanh dong dua tren bieu thuc truy hoi 
+de quy gom 2 pha phan chinh: + suy biến
+                             + de quy 
++ đệ quy đuôi: tiết kiệm bộ nhớ
+void gt(n, F) {
+    if(n == 0) return 
+    F = F * n;
+    gt(n-1,F);
+} 
+
++ đệ quy tương hỗ:      sinx = 2sin(x/2)cos(x/2), cosx = cos^2(x/2) - sin^2(x/2)
+double SIN(double)
+double COS(double)
+double abs(double x)
+    return x > 0 ? x : -x;
+
+SIN(double x) 
+    if(x < 1e-4) return x;
+    return 2 * SIN(x/2) * COS(x/2)
+
+COS(double x) 
+    if(abs(x) < 1e -4) return 1;
+    double u = SIN(x/2), v = COS(x/2);
+    return v^2 - u^2;
+
++ đệ quy có nhớ: 
+vd: Fibo 
+    Fn = 1 
+         Fn-1 + Fn-2
+    
+    long Fib(int n) {
+        return n < 2 ? 1 : Fib(n - 1) + Fib(n - 2);
+    }
+
+2 đệ quy chia để trị 
+- chia bài toán lớn thành nhiều bài toán nhỏ co cung cach giai sau do dùng đệ quy giải các bt nhỏ rồi tổng hợn kết quả đc bà toán lớn 
++ cấu trúc : 
+- chia : chia bài toán lớn thành nhiều bài toán cón 
+- trị : giải bài toán con bằng đệ quy 
+- liên kết : gắn kq bài toans con -> bt lớn 
+
++ bt tách nhóm : 
+cho n ng tách thành 2 nhóm mỗi nhóm cách nhau 4 ng 
+
+
+3. Đệ quy giảm để trị
++ trường hợp đơn giản của chia để trị 
++ mỗi lần gọi đệ quy chỉ giảm tối đa 1 bài toán con 
