@@ -1,0 +1,5 @@
+1. Phương pháp quay lui
+ + Giải các bài toán đi tìm các cấu hình tổ hợp dang vector<x1,x2,..xn>
+ + vd: Sinh xau nhi phan 
+        Sinh hoan vi 
+        sinh xau nhi phan khong chua 101

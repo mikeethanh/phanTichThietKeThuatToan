@@ -12,10 +12,10 @@ int main() {
     for(int i = 3 ; i < 100; i++) {
         F[i] = F[i-1] + F[i-2];
     }
-    long t,k,n;
+    long long t,k,n;
     cin >> t;
     while(t--) {
-        cin >> k >> n;
+        cin >> n >> k;
         cout << xFibo(k,n) << endl;
     }
 }

@@ -48,3 +48,61 @@ cho n ng tách thành 2 nhóm mỗi nhóm cách nhau 4 ng
 3. Đệ quy giảm để trị
 + trường hợp đơn giản của chia để trị 
 + mỗi lần gọi đệ quy chỉ giảm tối đa 1 bài toán con 
+
+vd a^n = 1   n = 0 
+   a^n = (a^2) ^ n/2    n chan 
+   a^n = (a^2) ^ n/2 * a n le 
+
+   double pow(double a, int n) {
+    return n == 0 ? 1 : (n%2)
+   }
+
+
+
++ hàm phi euler 
+- DN: cho n e Z+ hàm phi euler của n kí hiệu C(n) la so nhưngx sôs [1,n] nguyên tố cùng nhau của n.
+
+vd: phi(7) = 6 
+    phi(12) = 4
+    phi(p) = p - 1 
+    phi(p^k) = p^(k-1) * (p-1)
+    phi(a*b) = phi(a) * phi(b) nếu (a,b) = 1
+
+định lí : fecmar nhỏ
+    a^n % m = (a%m) ^ (n%phi(m)) % m
+
+BT: cho a,n rút gọn a^n
+2^10 = 1024 = 7 
+rút gọn bấm số : 
+    47284832493 = 60 = 6 
+
++ Nghịch đảo modulo
+nếu a và m nguyên tố cùng nhau (a,m) = 1 
+thì tồn tại b sao co a * b % M = 1 
+thì b được gọi là nghịch đảo của a theo M 
+
+vd:  a = 7 , M = 13 
+=> b = 2
+cách tìm: 
+hệ quả fecmar a ^ M-1 % M = 1 nêys M nguyên tố 
+              a * a^(M-2) % M = 1 
+                b
+vd : M = 13 a = 6 
+b = a ^  (M-2) % M = 6 ^ 11 % 13
+                 = 6 * 36 ^ 5 % 13
+                 = 6 % (-3) ^ 5 % 13
+                 = 6 * (-3) * 9 ^ 2 %13
+                 = -18 * 16 % 13
+                 = -5 * 3 = -15 % 13
+                 = -2 % 13
+
+a = 7   M = 12 
+phi(M) = 4 , b = a ^ (phi(M) - 1) = a ^ 3
+b = 7 ^ 3 % 12 = (-5)^3
+
+2.1 Giảm đồ thị 
+BT : Fibonacci Fn = 1    n = 0,1 
+               Fn-1 + Fn-2   n > 1
+
+
+    
