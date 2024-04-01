@@ -3,3 +3,7 @@
  + vd: Sinh xau nhi phan 
         Sinh hoan vi 
         sinh xau nhi phan khong chua 101
+
+2. Quay lui liet ke
++ vd: bTquan hau: đặt n quân hậu lên bàn cơ f n * n sao cho ko co cặp nào ăn nhau .\
+                  
