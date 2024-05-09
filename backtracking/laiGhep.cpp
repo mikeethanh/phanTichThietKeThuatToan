@@ -17,6 +17,7 @@ void TRY(string x) {
 int main() {
     cin >>a>>b;
     n = a.length();
+    
     for(int i = 0 ; i < n; i++) {
         if(a[i] > b[i]) swap(a[i],b[i]);
     }

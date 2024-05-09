@@ -9,7 +9,7 @@ int main()
     for(auto &x : a) cin >>x;
     sort(a,a+n,greater<long>());
     for(int i = 0; i < n && a[i] >k*i;i++) {
-        res += a[i] - i *k;
+        res += a[i] - i * k;
     }
     cout <<res;
     return 0;

@@ -16,6 +16,7 @@ void TRY(string x) {
 int main() {
     string s;
     cin >> s;
+    n = s.length();
     for(auto c : s) F[c]++;
     TRY("");
 }
